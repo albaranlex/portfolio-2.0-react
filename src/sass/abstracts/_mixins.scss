@@ -21,7 +21,7 @@
 @mixin main-text-pos {
   position: absolute;
   left: 170px;
-  top: 350px;
+  top: 280px;
   color: white;
 }
 
@@ -34,6 +34,6 @@
 
 @mixin preview-window-pos {
   position: absolute;
-  right: 290px;
-  bottom: 140px;
+  right: 248px;
+  bottom: 105px;
 }

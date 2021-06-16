@@ -1,5 +1,5 @@
 import React from "react";
-import thumbnail from "../img/img-01.png";
+import thumbnail from "../img/img-03.jpg";
 import MainImage from "../img/img-02.jpg";
 
 const Landing = () => {
