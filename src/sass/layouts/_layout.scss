@@ -20,13 +20,15 @@
   background-color: #2e2d33;
 }
 
+.menu {
+  @include menu-pos;
+  color: white;
+  font-size: 20px;
+}
 .headline-main {
   @include main-text-pos;
   width: 400px;
   height: 120px;
-}
-h3 {
-  @include menu-pos;
 }
 
 h5 {

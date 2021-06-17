@@ -1,13 +1,23 @@
 import React from "react";
 import thumbnail from "../img/img-03.jpg";
 import MainImage from "../img/img-02.jpg";
+import Menu from "../components/Menu";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Landing = () => {
   return (
     <div id="gen-layout">
       <div id="left">
         <div className="menu">
-          <h3>X</h3>
+          <Router>
+            <Menu />
+            <Switch>
+              <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </Router>
         </div>
         <div className="headline-main">
           <h1>Hey there, I'm Alex and I'm a Junior Developer</h1>
