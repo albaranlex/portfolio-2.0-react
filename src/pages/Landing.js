@@ -1,6 +1,6 @@
 import React from "react";
 import thumbnail from "../img/img-03.jpg";
-import MainImage from "../img/img-02.jpg";
+import LandingImage from "../img/img-02.jpg";
 
 const Landing = () => {
   return (
@@ -16,7 +16,7 @@ const Landing = () => {
         </div>
       </div>
       <div id="main-window">
-        <img src={MainImage} alt="" />
+        <img src={LandingImage} alt="" />
       </div>
       <div id="footer">
         <div className="sub-text">

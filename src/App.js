@@ -8,7 +8,7 @@ import Landing from "./pages/Landing";
 function App() {
   return (
     <div style={{ position: "relative" }}>
-      <Navbar style={{ position: "absolute", top: "15vh", left: "15%" }} />
+      <Navbar />
       <Router>
         <Switch>
           <Route path="/" exact component={Landing} />
