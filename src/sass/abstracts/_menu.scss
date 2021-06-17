@@ -1,19 +1,18 @@
 .navbar {
-  background-color: none;
-  height: 80px;
-  display: flex;
+  height: 100%;
+  display: inline-block;
   justify-content: start;
   align-items: center;
 }
 
 .menu-bars {
   margin-left: 2rem;
-  font-size: 2rem;
-  background: none;
+  font-size: 1.8rem;
+  background: transparent;
 }
 
 .nav-menu {
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: none;
   width: 265px;
   height: 100vh;
   display: flex;
@@ -22,6 +21,7 @@
   top: 0;
   left: -100%;
   transition: 1850ms;
+  z-index: 2;
 }
 
 .nav-menu.active {
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 150px;
+  padding: 10px 0px 10px 150px;
   list-style: none;
   height: 60px;
 }
@@ -66,4 +66,5 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-size: 15px;
 }

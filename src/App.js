@@ -1,21 +1,21 @@
-import { Route } from "react-router-dom";
 import React from "react";
-import Landing from "./pages/Landing";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Landing from "./pages/Landing";
 
 function App() {
   return (
-    <div className="App">
-      <Route path="/">
-        <Landing />
-      </Route>
-      <Route path="/Projects">
-        <Projects />
-      </Route>
-      <Route path="/Contact">
-        <Contact />
-      </Route>
+    <div style={{ position: "relative" }}>
+      <Navbar style={{ position: "absolute", top: "15vh", left: "15%" }} />
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Landing} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Router>
     </div>
   );
 }

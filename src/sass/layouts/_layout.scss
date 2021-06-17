@@ -31,6 +31,17 @@
   height: 120px;
 }
 
+h3 {
+  @include sub-headline-top-pos;
+  font-size: 8px;
+  color: #afaeae;
+}
+
+.dash {
+  border-bottom: 1px solid #afaeae;
+  padding-bottom: 5px;
+}
+
 h5 {
   @include sub-text-pos;
   font-weight: bolder;

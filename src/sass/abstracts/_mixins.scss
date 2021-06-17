@@ -25,6 +25,13 @@
   color: white;
 }
 
+@mixin sub-headline-top-pos {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+  color: white;
+}
+
 @mixin sub-text-pos {
   position: absolute;
   left: 170px;

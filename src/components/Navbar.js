@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 
-function Menu() {
+function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
   return (
-    <>
+    <div
+      style={{
+        position: "absolute",
+        top: "10vh",
+        left: "5%",
+      }}
+    >
       <IconContext.Provider value={{ color: "white" }}>
         <div className="navbar">
           <Link to="#" className="menu-bars">
@@ -20,9 +26,9 @@ function Menu() {
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
-              <Link to="#" className="menu-bars">
+              {/* <Link to="#">
                 <AiOutlineClose />
-              </Link>
+              </Link> */}
             </li>
             {SidebarData.map((item, index) => {
               return (
@@ -34,7 +40,7 @@ function Menu() {
           </ul>
         </nav>
       </IconContext.Provider>
-    </>
+    </div>
   );
 }
-export default Menu;
+export default Navbar;
