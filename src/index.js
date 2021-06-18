@@ -5,7 +5,7 @@ import "./sass/main.scss";
 import App from "./App";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/portfolio-react">
     <App />
   </BrowserRouter>,
   document.getElementById("root")
