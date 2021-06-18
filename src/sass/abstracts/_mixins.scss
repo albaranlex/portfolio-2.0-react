@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 @mixin main-grid {
   display: grid;
   grid-template-columns: 1.2fr 2fr 2fr;
@@ -21,26 +16,37 @@
 @mixin main-text-pos {
   position: absolute;
   left: 170px;
-  top: 280px;
+  top: 350px;
   color: white;
 }
 
 @mixin sub-headline-top-pos {
   position: absolute;
-  left: 120px;
-  top: 120px;
+  left: 166px;
   color: white;
+  font-weight: bolder;
+  font-size: 10px;
+  z-index: 6;
 }
 
-@mixin sub-text-pos {
+@mixin sub-headline-bottom-pos {
   position: absolute;
   left: 170px;
   bottom: 110px;
   color: white;
 }
 
-@mixin preview-window-pos {
+@mixin next-image-window-pos {
   position: absolute;
   right: 248px;
-  bottom: 105px;
+  bottom: 150px;
+}
+
+@mixin blockade {
+  background-color: #2e2d33;
+  width: 295px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  z-index: 5;
 }

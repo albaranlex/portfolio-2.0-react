@@ -6,12 +6,17 @@ const Projects = () => {
   return (
     <div id="gen-layout">
       <div id="left">
-        <div className="menu"></div>
+        <div className="blockade-projects"></div>
+        <div className="sub-headline-top-projects">
+          <h5>
+            PR<span className="dash">OJECTS</span>
+          </h5>
+        </div>
         <div className="headline-main">
           <h1>LET'S TALK HOW MY SERVICES COULD BENEFIT YOU</h1>
         </div>
 
-        <div className="sub-headline">
+        <div className="sub-headline-bottom">
           <h5>About</h5>
         </div>
       </div>

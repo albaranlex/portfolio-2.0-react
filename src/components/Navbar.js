@@ -13,8 +13,9 @@ function Navbar() {
     <div
       style={{
         position: "absolute",
-        top: "10vh",
-        left: "5%",
+        top: "55px",
+        left: "50px",
+        zIndex: "5",
       }}
     >
       <IconContext.Provider value={{ color: "white" }}>
@@ -25,11 +26,7 @@ function Navbar() {
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
-            <li className="navbar-toggle">
-              {/* <Link to="#">
-                <AiOutlineClose />
-              </Link> */}
-            </li>
+            <li className="navbar-toggle"></li>
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>

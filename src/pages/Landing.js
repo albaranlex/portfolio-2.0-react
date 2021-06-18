@@ -6,25 +6,33 @@ const Landing = () => {
   return (
     <div id="gen-layout">
       <div id="left">
-        <div className="menu"></div>
+        <div className="blockade-landing"></div>
+        <div className="sub-headline-top-landing">
+          <h5>
+            M<span className="dash">AIN</span>
+          </h5>
+        </div>
         <div className="headline-main">
-          <h1>Hey there, I'm Alex and I'm a Junior Developer</h1>
+          <h1>SYMMETRY IN DESIGNS AND CODE.</h1>
         </div>
 
-        <div className="sub-headline">
+        <div className="sub-headline-bottom">
           <h5>About</h5>
         </div>
       </div>
       <div id="main-window">
+        {/* <div className="photo-container">
+        
+        </div> */}
         <img src={LandingImage} alt="" />
       </div>
       <div id="footer">
         <div className="sub-text">
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-            qui aliquam doloribus perferendis, eligendi laborum harum neque
-            dolorum iure dolorem provident odio illum est! In, incidunt maxime?
-            Doloremque, ipsam minus!
+            In a world of rush and chaos, we are in constant search for
+            something still and perfect. After all, even a tower block that once
+            seemed drab and ugly, can, if photographed in the right way, be
+            transformed to a thing of beauty.
           </p>
         </div>
         <div className="next-image-window">
