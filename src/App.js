@@ -8,8 +8,8 @@ import Landing from "./pages/Landing";
 function App() {
   return (
     <div style={{ position: "relative" }}>
-      <Navbar />
       <Router>
+        <Navbar />
         <Switch>
           <Route path="/" exact component={Landing} />
           <Route path="/projects" component={Projects} />

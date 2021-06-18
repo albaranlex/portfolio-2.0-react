@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { CgMenuGridO } from "react-icons/cg";
-import { AiOutlineClose } from "react-icons/ai";
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
 
