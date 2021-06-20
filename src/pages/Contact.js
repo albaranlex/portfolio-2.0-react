@@ -4,11 +4,20 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import ImageSlider from "../components/ImageSlider";
+import logo from "../img/logo.png";
 
 const Contact = () => {
   return (
     <div id="gen-layout">
       <div id="left">
+        <div className="logo-top">
+          <img src={logo}></img>
+        </div>
+        <div className="logo-bottom">
+          <h5>
+            ALEX<span className="logo-highlight">ALBARAN</span>
+          </h5>
+        </div>
         <div className="blockade-contact"></div>
         <div className="sub-headline-top-contact">
           <h5>

@@ -38,6 +38,36 @@ body {
   position: relative;
 }
 
+.logo-top {
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  img {
+    width: 50px;
+    height: 40px;
+    opacity: 0.5;
+  }
+}
+.logo-bottom {
+  position: absolute;
+  bottom: 5px;
+  left: 45px;
+  width: 50px;
+  height: 50px;
+  // border: 1px solid rgba(255, 255, 255, 0.233);
+  // border-radius: 50%;
+  h5 {
+    font-size: 12px;
+    font-weight: 100;
+    color: #ffffff;
+    .logo-highlight {
+      font-weight: bolder;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.39);
+    }
+  }
+}
+
 .menu {
   @include menu-pos;
   color: white;
@@ -62,12 +92,10 @@ body {
   @include main-text-pos;
   width: 400px;
   height: 120px;
-}
-
-h3 {
-  @include sub-headline-top-pos;
-  font-size: 8px;
-  color: #afaeae;
+  h1 {
+    font-size: 40px;
+    color: #ffffff;
+  }
 }
 
 .dash {

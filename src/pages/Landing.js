@@ -1,11 +1,20 @@
 import React from "react";
-import LandingImage from "../img/img-02.jpg";
+import landingImage from "../img/img-02.jpg";
 import ImageSlider from "../components/ImageSlider";
+import logo from "../img/logo.png";
 
 const Landing = () => {
   return (
     <div id="gen-layout">
       <div id="left">
+        <div className="logo-top">
+          <img src={logo}></img>
+        </div>
+        <div className="logo-bottom">
+          <h5>
+            ALEX<span className="logo-highlight">ALBARAN</span>
+          </h5>
+        </div>
         <div className="blockade-landing"></div>
         <div className="sub-headline-top-landing">
           <h5>
@@ -13,7 +22,7 @@ const Landing = () => {
           </h5>
         </div>
         <div className="headline-main">
-          <h1>SYMMETRY IN DESIGNS AND CODE.</h1>
+          <h1>Design Symmetry. Reduced Clutter. Better UXperience.</h1>
         </div>
 
         <div className="sub-headline-bottom">
@@ -21,7 +30,7 @@ const Landing = () => {
         </div>
       </div>
       <div id="main-window">
-        <img src={LandingImage} alt="" />
+        <img src={landingImage} alt="" />
       </div>
       <div id="footer">
         <div className="sub-text">

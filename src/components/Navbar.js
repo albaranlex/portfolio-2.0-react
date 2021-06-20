@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CgMenuGridO } from "react-icons/cg";
+import { FcNext } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
@@ -12,15 +12,15 @@ function Navbar() {
     <div
       style={{
         position: "absolute",
-        top: "40px",
-        left: "40px",
+        top: "50%",
+        left: "0px",
         zIndex: "5",
       }}
     >
-      <IconContext.Provider value={{ color: "white" }}>
+      <IconContext.Provider value={{ color: "red" }}>
         <div className="navbar">
           <Link to="#" className="menu-bars">
-            <CgMenuGridO onClick={showSidebar} />
+            <FcNext onClick={showSidebar} />
           </Link>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
