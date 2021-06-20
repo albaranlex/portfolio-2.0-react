@@ -1,6 +1,5 @@
 import React from "react";
 import thumbnail from "../img/img-03.jpg";
-import ContactImage from "../img/img-05.jpg";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";

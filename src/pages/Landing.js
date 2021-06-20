@@ -1,6 +1,7 @@
 import React from "react";
 import thumbnail from "../img/img-03.jpg";
 import LandingImage from "../img/img-02.jpg";
+import ImageSlider from "../components/ImageSlider";
 
 const Landing = () => {
   return (
@@ -21,9 +22,6 @@ const Landing = () => {
         </div>
       </div>
       <div id="main-window">
-        {/* <div className="photo-container">
-        
-        </div> */}
         <img src={LandingImage} alt="" />
       </div>
       <div id="footer">
@@ -35,22 +33,11 @@ const Landing = () => {
             transformed to a thing of beauty.
           </p>
         </div>
-        <div className="next-image-window">
-          <img src={thumbnail} alt="" id="thumbnail" />
+        <div className="photo-slider-window">
+          <ImageSlider />
         </div>
-        <div className="next-image-text">
-          <p>
-            <span id="img-number">01</span> YOUTUBE CLONE
-          </p>
-        </div>
-        <div className="slide-buttons">
-          <span>
-            {" "}
-            <p>&lt; </p>
-          </span>
-          <span>
-            <p> &gt; </p>
-          </span>
+        <div className="photo-slider-caption">
+          <p>FEAUTRUED PROJECTS</p>
         </div>
       </div>
     </div>
