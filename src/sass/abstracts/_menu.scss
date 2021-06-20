@@ -7,7 +7,7 @@
 
 .menu-bars {
   margin-left: 2rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background: transparent;
 }
 
@@ -53,6 +53,7 @@
 .nav-text a:hover {
   font-weight: bolder;
   color: white;
+  text-decoration: none;
 }
 
 .nav-menu-items {
@@ -67,5 +68,19 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 15px;
+}
+
+.blockade-landing {
+  @include blockade;
+  top: 100px;
+}
+
+.blockade-projects {
+  @include blockade;
+  top: 150px;
+}
+
+.blockade-contact {
+  @include blockade;
+  top: 200px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import thumbnail from "../img/img-03.jpg";
-import ProjectImage from "../img/img-04.jpg";
+import ProjectImage from "../img/img-05.jpg";
+import ImageSlider from "../components/ImageSlider";
 
 const Projects = () => {
   return (
@@ -32,22 +32,11 @@ const Projects = () => {
             Doloremque, ipsam minus!
           </p>
         </div>
-        <div className="next-image-window">
-          <img src={thumbnail} alt="" id="thumbnail" />
+        <div className="photo-slider-window">
+          <ImageSlider />
         </div>
-        <div className="next-image-text">
-          <p>
-            <span id="img-number">01</span> YOUTUBE CLONE
-          </p>
-        </div>
-        <div className="slide-buttons">
-          <span>
-            {" "}
-            <p>&lt; </p>
-          </span>
-          <span>
-            <p> &gt; </p>
-          </span>
+        <div className="photo-slider-caption">
+          <p>FEAUTRUED PROJECTS</p>
         </div>
       </div>
     </div>

@@ -95,18 +95,3 @@ h3 {
   bottom: 30px;
   color: #e4e3e3bd;
 }
-
-.blockade-landing {
-  @include blockade;
-  top: 90px;
-}
-
-.blockade-projects {
-  @include blockade;
-  top: 150px;
-}
-
-.blockade-contact {
-  @include blockade;
-  top: 200px;
-}

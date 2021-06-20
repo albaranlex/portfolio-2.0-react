@@ -12,8 +12,8 @@ function Navbar() {
     <div
       style={{
         position: "absolute",
-        top: "55px",
-        left: "50px",
+        top: "40px",
+        left: "40px",
         zIndex: "5",
       }}
     >

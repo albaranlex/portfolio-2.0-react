@@ -1,8 +1,9 @@
 import React from "react";
-import thumbnail from "../img/img-03.jpg";
+import ContactImage from "../img/img-04.jpg";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import ImageSlider from "../components/ImageSlider";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
         <div className="headline-main">
           <h1>
             HEY I JUST MET YOU. AND THIS IS CRAZY. BUT HERE'S MY{" "}
-            <span className="dash-two">CONTACT DETAILS</span>. SO CALL ME MAYBE?
+            <span className="dash-two">NUMBER</span>. SO CALL ME MAYBE?
           </h1>
         </div>
 
@@ -25,7 +26,9 @@ const Contact = () => {
           <h5>SOCIAL</h5>
         </div>
       </div>
-      <div id="main-window">{/* <img src={ContactImage} alt="" /> */}</div>
+      <div id="main-window">
+        <img src={ContactImage} alt="" />
+      </div>
       <div id="footer">
         <div className="sub-text">
           <span className="icons">
@@ -38,22 +41,11 @@ const Contact = () => {
             <FaInstagramSquare />
           </span>
         </div>
-        <div className="next-image-window">
-          <img src={thumbnail} alt="" id="thumbnail" />
+        <div className="photo-slider-window">
+          <ImageSlider />
         </div>
-        <div className="next-image-text">
-          <p>
-            <span id="img-number">01</span> YOUTUBE CLONE
-          </p>
-        </div>
-        <div className="slide-buttons">
-          <span>
-            {" "}
-            <p>&lt; </p>
-          </span>
-          <span>
-            <p> &gt; </p>
-          </span>
+        <div className="photo-slider-caption">
+          <p>FEAUTRUED PROJECTS</p>
         </div>
       </div>
     </div>
