@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PulseLoader from "react-spinners/PulseLoader";
 
 //COMPONENTS
 import Navbar from "./components/Navbar";
@@ -10,7 +11,28 @@ import Contact from "./pages/Contact";
 import Landing from "./pages/Landing";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  },[])
   return (
+    <div className = "App"> 
+    {
+      loading ?
+     
+      <PulseLoader
+ 
+      size={10}
+      color={"white"}
+      loading={loading} 
+      />
+      
+      :
+    
     <div style={{ position: "relative" }}>
       <Router>
         <Navbar />
@@ -24,6 +46,8 @@ function App() {
           </Route>
         </Switch>
       </Router>
+    </div>
+}
     </div>
   );
 }

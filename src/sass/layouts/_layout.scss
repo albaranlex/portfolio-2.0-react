@@ -1,3 +1,11 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2d33;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +18,7 @@ body {
 
 #gen-layout {
   @include main-grid;
-  min-width: 1278px;
+  min-width: 1100px;
   min-height: 800px;
 }
 

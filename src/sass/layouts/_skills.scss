@@ -1,8 +1,7 @@
 .skills {
   display: flex;
   align-items: center;
-  margin-left: 40px;
-  margin-top: 30px;
+  margin: 30px 20px 20px 0;
   padding: 10px;
   height: 70vh;
   width: 70vw;
@@ -21,6 +20,7 @@
   height: 520px;
   background-color: transparent;
   text-align: center;
+  margin: 0 10px;
 }
 
 .se-logo {
@@ -43,14 +43,14 @@
   }
   p,
   ul {
-    font-size: 10px;
+    font-size: 12px;
     color: #e4e3e3bd;
     list-style-type: none;
   }
 
   h2 {
     font-size: 15px;
-    color: #6e6e6e;
+    color: white;
   }
 }
 

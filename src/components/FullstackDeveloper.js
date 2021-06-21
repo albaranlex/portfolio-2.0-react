@@ -12,10 +12,8 @@ function FullstackDeveloper() {
       </div>
       <div className="skills-content">
         <p className="skills-subheader">
-          Structure in code is what draw me into it on the first place. I lean
-          more towards Frontend Development though, as I am a very visual
-          person. Backend is something that I am, however, also very capable of
-          doing.
+          I am a visual coder and lean more towards frontend Development but
+          also a very capable backend developer. doing.
         </p>
         <br />
         <h2>Languages</h2>
