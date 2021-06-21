@@ -1,5 +1,4 @@
 import React from "react";
-import ContactImage from "../img/img-04.jpg";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -25,31 +24,44 @@ const Contact = () => {
           </h5>
         </div>
 
-        <div className="headline-main">
-          <h1>
-            HEY I JUST MET YOU. AND THIS IS CRAZY. BUT HERE'S MY{" "}
-            <span className="dash-two">NUMBER</span>.
-          </h1>
-        </div>
+        <div className="headline-main">{/* <h1>Love the hustle.</h1> */}</div>
 
         <div className="sub-headline-bottom">
-          <h5>SOCIAL</h5>
+          <h5>Love the hustle.</h5>
         </div>
       </div>
       <div id="main-window">
-        <img src={ContactImage} alt="" />
+        <div className="contact-content">
+          <div className="contact-header">
+            <h1>
+              Allow me to inspire you; let's build something great together.
+            </h1>
+          </div>
+          <div className="contact-info">
+            <div className="contact-item">
+              <h3>Start a conversation</h3>
+              <p>albaranlex@icloud.com</p>
+              <p>+49 000 000 0000</p>
+            </div>
+            <div>
+              <h3>Social</h3>
+              <span className="icons">
+                <FaGithubSquare />
+              </span>
+              <span className="icons">
+                <FaLinkedin />{" "}
+              </span>
+              <span className="icons">
+                <FaInstagramSquare />
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="footer">
         <div className="sub-text">
-          <span className="icons">
-            <FaGithubSquare />
-          </span>
-          <span className="icons">
-            <FaLinkedin />{" "}
-          </span>
-          <span className="icons">
-            <FaInstagramSquare />
-          </span>
+          <p>&#169; 2021 ALEXALBARAN.</p>
+          <p>All Right Reserved.</p>
         </div>
         <div className="photo-slider-window">
           <ImageSlider />

@@ -26,7 +26,7 @@ const Services = () => {
           </h5>
         </div>
         <div className="headline-main">
-          <h1>LET'S TALK HOW MY SERVICES COULD BENEFIT YOU</h1>
+          <h1>Me.</h1>
         </div>
 
         <div className="sub-headline-bottom">
@@ -41,6 +41,9 @@ const Services = () => {
           <div className="line-divider"></div>
           <WorkExperience />
         </div>
+        {/* <div className="skills-img">
+          <img src={ProjectImage} />
+        </div> */}
       </div>
       <div id="footer">
         <div className="sub-text">

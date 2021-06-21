@@ -1,5 +1,4 @@
 import React from "react";
-import landingImage from "../img/img-02.jpg";
 import ImageSlider from "../components/ImageSlider";
 import logo from "../img/logo.png";
 
@@ -29,9 +28,7 @@ const Landing = () => {
           <h5>About</h5>
         </div>
       </div>
-      <div id="main-window">
-        <img src={landingImage} alt="" />
-      </div>
+      <div id="main-window"></div>
       <div id="footer">
         <div className="sub-text">
           <p>
@@ -41,6 +38,7 @@ const Landing = () => {
             transformed to a thing of beauty.
           </p>
         </div>
+        {/* <img src={landingImage} alt="" /> */}
         <div className="photo-slider-window">
           <ImageSlider />
         </div>
