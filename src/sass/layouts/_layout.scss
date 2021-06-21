@@ -52,10 +52,28 @@ body {
         text-decoration: underline;
         line-height: 12px;
       }
+      a {
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
       .icons {
         font-size: 20px;
         color: #e4e3e3;
         margin-right: 12px;
+        &:hover {
+          color: white;
+          cursor: pointer;
+          text-decoration: none;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+          &:focus {
+            outline: none;
+          }
+        }
       }
     }
   }

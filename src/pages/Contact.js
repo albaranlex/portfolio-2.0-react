@@ -40,19 +40,27 @@ const Contact = () => {
           <div className="contact-info">
             <div className="contact-item">
               <h3>Start a conversation</h3>
-              <p>albaranlex@icloud.com</p>
+              <a href="mailto:albaranlex@icloud.com">
+                <p>albaranlex@icloud.com</p>
+              </a>
               <p>+49 000 000 0000</p>
             </div>
             <div>
               <h3>Social</h3>
               <span className="icons">
-                <FaGithubSquare />
+                <a href="https://github.com/albaranlex">
+                  <FaGithubSquare />
+                </a>
               </span>
               <span className="icons">
-                <FaLinkedin />{" "}
+                <a href="https://www.linkedin.com/in/albaranalex/">
+                  <FaLinkedin />
+                </a>
               </span>
               <span className="icons">
-                <FaInstagramSquare />
+                <a href="https://www.instagram.com/maaculit/">
+                  <FaInstagramSquare />
+                </a>
               </span>
             </div>
           </div>

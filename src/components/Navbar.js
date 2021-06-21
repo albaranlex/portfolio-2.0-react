@@ -17,7 +17,7 @@ function Navbar() {
         zIndex: "5",
       }}
     >
-      <IconContext.Provider value={{ color: "red" }}>
+      <IconContext.Provider value={{ color: "inherit" }}>
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FcNext onClick={showSidebar} />
