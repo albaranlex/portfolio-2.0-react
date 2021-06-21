@@ -43,7 +43,7 @@ const Landing = () => {
           <ImageSlider />
         </div>
         <div className="photo-slider-caption">
-          <p>FEAUTRUED PROJECTS</p>
+          <p>FEAUTURED PROJECTS</p>
         </div>
       </div>
     </div>

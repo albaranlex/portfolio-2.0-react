@@ -7,6 +7,7 @@ import logo from "../img/logo.png";
 import Designer from "../components/Designer";
 import FullstackDeveloper from "../components/FullstackDeveloper";
 import WorkExperience from "../components/WorkExperience";
+
 const Services = () => {
   return (
     <div id="gen-layout">
