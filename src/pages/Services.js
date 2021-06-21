@@ -3,7 +3,11 @@ import ProjectImage from "../img/img-05.jpg";
 import ImageSlider from "../components/ImageSlider";
 import logo from "../img/logo.png";
 
-const Projects = () => {
+//Content
+import Designer from "../components/Designer";
+import FullstackDeveloper from "../components/FullstackDeveloper";
+import WorkExperience from "../components/WorkExperience";
+const Services = () => {
   return (
     <div id="gen-layout">
       <div id="left">
@@ -30,7 +34,13 @@ const Projects = () => {
         </div>
       </div>
       <div id="main-window">
-        <img src={ProjectImage} alt="" />
+        <div className="skills">
+          <Designer />
+          <div className="line-divider"></div>
+          <FullstackDeveloper />
+          <div className="line-divider"></div>
+          <WorkExperience />
+        </div>
       </div>
       <div id="footer">
         <div className="sub-text">
@@ -52,4 +62,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Services;

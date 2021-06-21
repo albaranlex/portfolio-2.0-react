@@ -1,0 +1,56 @@
+.skills {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  height: 70vh;
+  line-height: 30px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.se-logo {
+  font-size: 50px;
+  margin: 20px;
+}
+.skills-header {
+  h1 {
+    font-size: 20px;
+    color: #857d7d;
+  }
+}
+
+.skills-content {
+  .skills-subheader {
+    font-size: 12px;
+    color: #151515;
+  }
+  p,
+  ul {
+    font-size: 10px;
+    color: #151515;
+    list-style-type: none;
+  }
+
+  h2 {
+    font-size: 15px;
+    color: #857d7d;
+  }
+}
+
+.line-divider {
+  width: 1px;
+  height: 500px;
+  background-color: #80808031;
+  margin: 0 20px;
+}

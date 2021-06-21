@@ -24,10 +24,11 @@ const Contact = () => {
             CO<span className="dash">NTACT</span>
           </h5>
         </div>
+
         <div className="headline-main">
           <h1>
             HEY I JUST MET YOU. AND THIS IS CRAZY. BUT HERE'S MY{" "}
-            <span className="dash-two">NUMBER</span>. SO CALL ME MAYBE?
+            <span className="dash-two">NUMBER</span>.
           </h1>
         </div>
 

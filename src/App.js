@@ -14,6 +14,7 @@ function App() {
     <div style={{ position: "relative" }}>
       <Router>
         <Navbar />
+
         <Switch>
           <Route path="/" exact component={Landing} />
           <Route path="/services" component={Services} />
