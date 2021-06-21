@@ -34,7 +34,7 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-header">
             <h1>
-              Allow me to inspire you; let's build something great together.
+              Allow me to inspire you. let's build something great together.
             </h1>
           </div>
           <div className="contact-info">

@@ -26,12 +26,10 @@ const Services = () => {
             SE<span className="dash">RVICES</span>
           </h5>
         </div>
-        <div className="headline-main">
-          <h1>Me.</h1>
-        </div>
+        <div className="headline-main">{/* <h1>Me.</h1> */}</div>
 
         <div className="sub-headline-bottom">
-          <h5>About</h5>
+          <h5>Love the hustle.</h5>
         </div>
       </div>
       <div id="main-window">
@@ -48,12 +46,8 @@ const Services = () => {
       </div>
       <div id="footer">
         <div className="sub-text">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-            qui aliquam doloribus perferendis, eligendi laborum harum neque
-            dolorum iure dolorem provident odio illum est! In, incidunt maxime?
-            Doloremque, ipsam minus!
-          </p>
+          <p>&#169; 2021 ALEXALBARAN.</p>
+          <p>All Right Reserved.</p>
         </div>
         <div className="photo-slider-window">
           <ImageSlider />
