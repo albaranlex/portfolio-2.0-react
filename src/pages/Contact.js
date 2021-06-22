@@ -24,7 +24,6 @@ const Contact = () => {
           </h5>
         </div>
 
-        <div className="headline-main">{/* <h1>Love the hustle.</h1> */}</div>
 
         <div className="sub-headline-bottom">
           <h5>Love the hustle.</h5>

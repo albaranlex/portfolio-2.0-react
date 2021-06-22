@@ -27,9 +27,9 @@ const Services = () => {
           </h5>
         </div>
 
-        <div className="sub-headline-bottom">
+        {/* <div className="sub-headline-bottom">
           <h5>Love the hustle.</h5>
-        </div>
+        </div> */}
       </div>
       <div id="main-window">
         <div className="skills">
@@ -44,10 +44,10 @@ const Services = () => {
         </div> */}
       </div>
       <div id="footer">
-        <div className="sub-text">
+        {/* <div className="sub-text">
           <p>&#169; 2021 ALEXALBARAN.</p>
           <p>All Right Reserved.</p>
-        </div>
+        </div> */}
         <div className="photo-slider-window">
           <ImageSlider />
         </div>
