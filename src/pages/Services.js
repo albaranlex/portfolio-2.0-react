@@ -26,7 +26,6 @@ const Services = () => {
             SE<span className="dash">RVICES</span>
           </h5>
         </div>
-        <div className="headline-main">{/* <h1>Me.</h1> */}</div>
 
         <div className="sub-headline-bottom">
           <h5>Love the hustle.</h5>

@@ -1,8 +1,15 @@
+@import "../layouts/media";
+
 .navbar {
+  @include media("<=phone") {
+  top: -500px;
+  left: 180px;
+}
   height: 100%;
-  display: inline-block;
-  justify-content: start;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 
 .menu-bars {
@@ -14,7 +21,7 @@
 .nav-menu {
   background-color: none;
   width: 265px;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -30,6 +37,9 @@
 }
 
 .nav-text {
+  @include media("<=phone") {
+    padding-left: 30px;
+  }
   display: flex;
   justify-content: start;
   align-items: center;

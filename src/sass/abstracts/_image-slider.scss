@@ -1,4 +1,9 @@
 .photo-slider-window {
+  @include media ("<=phone") {
+    
+    width: 230px;
+    height: 120px;
+  }
   @include next-image-window-pos;
   width: 180px;
   height: 100px;
@@ -17,17 +22,23 @@
 }
 
 .photo-slider-caption {
+  @include media ("<=phone") {
+    bottom: 520px;
+    left: 0;
+    width: 100%;
+  }
   background-color: #3f3d46;
   width: 265px;
   height: 50px;
   position: absolute;
   right: 1px;
   bottom: 100px;
-  z-index: 1;
+  z-index: 2;
   p {
     font-size: 9px;
     color: #e4e3e3bd;
     margin: 20px 15px 15px 25px;
+    background-color: #3f3d46;
   }
   span {
     margin: 0 15px;
@@ -39,9 +50,13 @@
 .my-carousel {
   div {
     ol {
+      @include media ("<=phone") {
+        display: none;
+      }
       position: absolute;
       bottom: -90px;
       li {
+
         border-radius: 50%;
         width: 5px;
         height: 5px;
@@ -54,6 +69,10 @@
   div {
     a {
       span {
+        @include media ("<=phone") {
+          bottom: -80px;
+          left: 10px;
+        }
         position: absolute;
         bottom: -70px;
         left: 180px;
@@ -84,6 +103,9 @@
   width: 50%;
 }
 .overlay {
+  @include media ("<=phone") {
+    left: 17px;
+  }
   position: absolute;
   top: 0;
   bottom: 0;

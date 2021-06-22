@@ -1,7 +1,10 @@
 @mixin main-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 2fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: 
+  "left main"
+  "left footer";
   width: 100vw;
   height: 100vh;
 }
@@ -14,15 +17,28 @@
 }
 
 @mixin main-text-pos {
+  @include media ("<=phone") {
+    top: 320px;
+    margin-left: -30px;
+  }
+  @include media ("<=tablet") {
+    top: 300px;
+    left: 20%;
+    font-size: 35px;
+  }
+  
   position: absolute;
-  left: 170px;
-  top: 350px;
+  left: 280px;
+  top: 300px;
   color: white;
 }
 
 @mixin sub-headline-top-pos {
+  @include media ("<=phone") {
+    left: 50px
+  }
   position: absolute;
-  left: 166px;
+  left: 170px;
   color: white;
   font-weight: bolder;
   font-size: 10px;
@@ -30,21 +46,37 @@
 }
 
 @mixin sub-headline-bottom-pos {
+  @include media ("<=phone") {
+    left: 70px;
+  }
+  @include media ("<=tablet") {
+    color: transparent;
+  }
+   
+
   position: absolute;
   left: 170px;
   bottom: 150px;
   color: white;
+  z-index: 10;
 }
 
 @mixin next-image-window-pos {
+  @include media ("<=phone") {
+    bottom: 350px;
+    left: 60px;
+  }
   position: absolute;
   right: 248px;
   bottom: 100px;
 }
 
 @mixin blockade {
+  @include media ("<=phone") {
+    width: 100px;
+  }
   background-color: #2e2d33;
-  width: 295px;
+  width: 250px;
   height: 50px;
   position: absolute;
   left: 0px;
